@@ -1,0 +1,41 @@
+.layout_body {
+    padding: 10px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*============================
+        Sidenav
+    ============================*/
+    @import "includes/side-nav";
+
+    /*============================
+        Main Section
+    ============================*/
+    .main_section{
+        display: block;
+        flex: 1;
+        /*============================
+            Header
+        ============================*/
+        @import "includes/header";
+
+        /*============================
+            Inner Section
+        ============================*/
+        .inner-section{
+            height: calc(100vh - 90px);
+            border-radius: 8px;
+            background-color: $white;
+            overflow: auto;
+            padding: 10px;
+
+            /*============================
+                Dashboard
+            ============================*/
+            //@import "pages/dashboard";
+        }
+    }
+}
